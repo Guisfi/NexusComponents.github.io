@@ -1,0 +1,61 @@
+
+/* ================================================= */
+/* ESTILOS ESPECÍFICOS DEL FORMULARIO DE COTIZACIÓN */
+/* ================================================= */
+
+/* Reutilizar la estructura base de contacto */
+.cotizacion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los campos */
+}
+
+.cotizacion-form input,
+.cotizacion-form textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+    width: 100%;
+    box-sizing: border-box; /* Importante para que el padding no cambie el ancho */
+}
+
+/* Línea divisoria para separar información de contacto y de producto */
+.form-divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+
+/* Estilo del Botón "SOLICITAR COTIZACIÓN" */
+.boton-cotizacion {
+    /* El mismo color azul de tu imagen (aproximado) */
+    background-color: #0088cc; 
+    
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px; /* Borde más redondeado para el botón */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    /* Asegura que el botón ocupe todo el ancho del formulario */
+    width: 100%; 
+}
+
+.boton-cotizacion:hover {
+    background-color: #005f99; /* Azul más oscuro al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.boton-cotizacion:active {
+    transform: translateY(1px); /* Efecto de "clic" */
+}
+
+/* Si ya tienes estilos para .contact-form, puedes reemplazar la regla anterior
+   por la que aplica solo al botón si quieres mantener el mismo input/textarea: */
+/* .contact-form button { ... }  <-- Reemplazar por .boton-cotizacion */
